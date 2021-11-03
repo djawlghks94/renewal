@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #464646
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#sect1 {
+    position: relative;
+}
+
+
+
+.vid video {
+    /* min-width: 100%;
+    min-height: 100%; */
+    /* position: absolute;
+
+    border: 1px solid red;
+    background-size: cover; */
+    height: 100vh;
+    position: absolute;
+    top: 75PX;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#header {
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    width: 100%;
+    align-content: stretch;
+    justify-content: flex-start;
+    font-weight: bold;
+
+}
+
+/* #header:hover {
+    background-color: #fff;
+} */
+
+#header .head {
+    width: 10%;
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+
+#header .depth1 {
+    width: 65%;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+}
+
+#header .depth2 {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+#header .login {
+    position: relative;
+    top: 35px;
+    margin-right: 20px;
+}
+
+#header .login a:nth-child(2) {
+    padding-right: 20px;
+}
+
+#header .login a:nth-child(3) {
+    padding-right: 8px;
+}
+
+#header .login a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#header .login img {
+    width: 30px;
+}
+
+#wrap .sns {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 99999;
+}
+
+#wrap .sns ul li {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,359 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+
+
+/* html {
+    overflow: hidden
+} */
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #464646;
+    overflow-x: hidden;
+}
+
+/* 두번째 박스 슬릭 */
+/* 슬라이드 번호버튼은 js에서 dots:true 값을 주면 나타나며,
+   슬라이드 박스내에 다음 코드가 자동으로 삽입됨.
+   <ul class="slick-dots">
+      <li><button>1</button></li>
+      <li><button>2</button></li>
+   </ul>
+*/
+.items .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.items .slick-dots>.slick-active {
+    color: red;
+}
+
+.items .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.items .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.items .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 80px;
+    color: #ddd;
+    border: none;
+}
+
+.items .prev {
+    left: 150px;
+    z-index: 9999;
+}
+
+.items .next {
+    right: 150px;
+}
+
+
+/* 세번째 박스 슬릭 */
+.mega .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 80px;
+    color: #ddd;
+    border: none;
+}
+
+.mega .prev {
+    left: 150px;
+    z-index: 9999;
+}
+
+.mega .next {
+    right: 150px;
+}
+
+
+
+.mega img {
+    transform: scale(0.8);
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.mega .slick-center img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#sect1 {
+    position: relative;
+}
+
+
+
+.vid video {
+    /* min-width: 100%;
+    min-height: 100%; */
+    /* position: absolute;
+
+    border: 1px solid red;
+    background-size: cover; */
+    height: 100vh;
+    position: absolute;
+    top: 75PX;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#header {
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    width: 100%;
+    align-content: stretch;
+    justify-content: flex-start;
+    font-weight: bold;
+
+}
+
+/* #header:hover {
+    background-color: #fff;
+} */
+#header {
+    background: #fff;
+}
+
+#header .head {
+    width: 10%;
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
+
+
+#header .depth1 {
+    width: 65%;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+}
+
+#header .depth2 {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+#header .login {
+    position: relative;
+    top: 35px;
+    margin-right: 20px;
+}
+
+#header .login a:nth-child(2) {
+    padding-right: 20px;
+}
+
+#header .login a:nth-child(3) {
+    padding-right: 8px;
+}
+
+#header .login a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#header .login img {
+    width: 30px;
+}
+
+#wrap .sns {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 99999;
+}
+
+#wrap .sns ul li {
+    padding-bottom: 10px;
+}
+
+
+
+/* #sect1.sns a {
+    padding-right: 10px;
+    border: 1px solid red;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+} */
+
+
+
+
+
+
+/* #sect1 .arrow:hover .side {
+    top: 200px;
+    left: 300px;
+}
+ */
+
+
+/* 두번째 */
+#sect2 {
+    padding-top: 170px;
+}
+
+#sect2 .name {
+    text-align: center;
+}
+
+#sect2 .name h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+#sect2 .items {
+    width: 100%;
+}
+
+/* #sect2 .items img:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+} */
+
+#sect2 .items div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#sect2 .items div>p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+#sect2 .items div p:hover {
+    color: #000
+}
+
+/* 세번쨰 */
+#sect3 {
+    padding-top: 170px;
+}
+
+#sect3 .name {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#sect3 .name h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+/* 네번쨰 */
+
+#sect4 {
+    padding-top: 100px;
+}
+
+#sect4 .name {
+    text-align: center;
+}
+
+#sect4 .name h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#sect4 .issue {
+
+    display: flex;
+    top: 100px;
+    left: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/*다섯번쨰 */
+#footer {
+    height: 250px;
+    background: #fff;
+    border-top: 1px solid #534e4e;
+}
+
+#footer .depth4 {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+
+}
+
+#footer .depth4 h3 {
+    font-size: 24px;
+    margin-top: -20px;
+    color: #838383;
+    padding-bottom: 9px;
+
+}
+
+#footer .depth5 li {
+    padding-bottom: 5px;
+    color: #838383;
+}
+
+#footer .depth4 li a:hover {
+    color: #111;
+    font-weight: bold;
+}
+
+#footer .depth6 {
+    font-size: 20px;
+
+}
